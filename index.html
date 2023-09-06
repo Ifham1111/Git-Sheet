@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>git & hub</title>
+</head>
+<body>
+
+    <!-- create repo on local repo -->
+    <p>
+        create git repo in local folder =>> git init
+    </p>
+    
+    <!-- create branch as any want -->
+    <p>
+        git checkout -b <branch_name>
+        <!-- git init -b <branch_name> -->
+        git branch -M main 
+    </p>
+
+    <!-- check the status of local repo -->
+    <p>
+        check status of git =>> git status
+    </p>
+
+    <!-- add files to repo -->
+    <p>
+        add files to git =>>
+        git add <file_name>
+        git add <file_name> <file_name>
+        git add .
+    </p>
+   
+    <!-- create repo in github -->
+    <p>
+        create branch =>> git branch branch_name
+    </p>
+    
+    <!-- commit files to git -->
+    <p>
+        commit files to git =>> git commit -m "message"
+    </p>
+    
+    <!-- check what had changed yet -->
+    <p>
+        check log of git =>> git log
+    </p>
+
+    <h1><!-- wokring >> staging >> commit --><h1>
+
+
+    <!-- using diff command -->
+    <p>
+        check difference between files =>> git diff
+
+        when the code will be in working directory then =>> git diff 
+
+        when the code while in the staging directory then =>> git diff --staged
+
+    </p>
+
+    <!-- how to remove the file from repo -->
+    <p>
+        remove file from git =>> git rm <file_name>
+    </p>
+
+    <!-- how to remove the file from repo but not from local -->
+    <p>
+        remove file from git but not from local =>> git rm --cached <file_name>
+    </p>
+
+    <!-- push from loacal to remote -->
+    <p>
+        create repo in github
+    </p>
+
+    <h1>
+        ssh-keygen -o
+        enter then all enter after that
+        open cmd then dir /a
+        cd .ssh
+        type id_rsa.pub
+        copy the key
+        go to github then settings then ssh and gpg keys then new ssh key
+        paste the key then add ssh key
+        After that come to working directory and 
+        git remote add origin <ssh_link>
+    </h1>
+
+    <p>
+        push files to github =>> git push -u origin main
+    </p>
+
+    <p>
+        pull files from github =>> git pull origin master
+    </p>
+
+
+
+
+    
+
+</body>
+</html>
